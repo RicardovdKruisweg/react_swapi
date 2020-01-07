@@ -1,0 +1,186 @@
+$uglyStarWarsYellow: #FFE807;
+$responsive: 800px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+body {
+  background-image: url('background.jpg');
+}
+/** Navbar */
+.navbar {
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+    &__item {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 16px;
+
+      &__link {
+        display: block;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+/** Containers */
+.container {
+  &__title {
+    margin: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: $uglyStarWarsYellow;
+  }
+
+  &__loading {
+    text-align: center;
+  }
+}
+
+/** Home */
+.categories {
+  
+  &__card {
+    background: rgba(0,0,0,0.8);
+    padding: 50px 25px;
+    min-height: 100px;
+    text-align: center;
+    float: left;
+    width: 25%;
+    margin: 4%;
+    border: 1px solid white;
+    @media screen and (max-width: $responsive) {
+      width: 42%
+    }
+    &__text {
+
+      &:first-letter{
+        text-transform: capitalize;
+      }
+    }
+
+    &__btn {
+      min-width: 100px;
+      bottom: 10px;
+      margin: 10px;
+      padding: 10px;
+      background-color: $uglyStarWarsYellow;
+      border: 1px solid black;
+      
+      &__link {
+        font-size: 1.1rem;
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/** Table */
+.table {
+  margin: auto;
+  background: rgba(0,0,0,0.8);
+  border: 1px solid white;
+
+  &__head {
+    padding: 10px;
+    background: rgba(255,232,7,0.4);
+    color:black;
+
+    &__row {
+      
+      &__item {
+        width: 50%;
+        padding: 20px;
+
+      }
+    }
+  }
+
+  &__body {
+    
+    &__row {
+
+      &__item {
+        text-align: center;
+        width: 50%;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+/** Grid */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+
+  &__col {
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    border: 1px solid white;
+    text-align: right;
+    color: white;
+    transition: background-color 1s;
+
+    &--3{
+      width: 25%;
+
+      @media screen and (max-width: $responsive) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/** Details */
+.card {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid white;
+
+  @media screen and (max-width: $responsive) {
+    width: 80%;
+  }
+  &__item {
+    margin: 10px;
+    padding: 10px;
+
+    &__links {
+
+      &__link {
+        margin: 5px;
+      }
+    }
+    &__key {
+      font-weight: 700;
+      float: left;
+      margin-right: 10px;
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

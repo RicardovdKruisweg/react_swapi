@@ -1,0 +1,40 @@
+{
+  "name": "starwars_labela",
+  "version": "1.0.0",
+  "description": "React application that use the swapi.co api",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "launch": "webpack-dev-server --open",
+    "test": "jest"
+  },
+  "author": "Ricardo van de Kruisweg",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "eslint": "^6.8.0",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
